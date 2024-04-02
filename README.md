@@ -1,8 +1,8 @@
 # abys-sim - A simple gravity simulator written in Python.
 
-After being met with computation power limitations when writing a gravity engine that accounted for all particles, I discovered an optimization technique that sampled a set of Level of Detail (LOD) grids. This technique examines the masses of surrounding cells on different LODs, capturing nearby particle interactions accurately while coarsely aggregating further away forces. While this brought the O(N^2) complexity of comparing each particle-to-particle interaction to around O(n), the CPU can only do so much. I plan to revisit that project in the near future and utilize GPU-based programming  for NVIDIA drivers. \
+After being met with computation power limitations when writing a gravity engine that accounted for all particles, I discovered an optimization technique that sampled a set of Level of Detail (LOD) grids. This technique examines the masses of surrounding cells on different LODs, capturing nearby particle interactions accurately while coarsely aggregating further away forces. While this brought the O(N^2) complexity of comparing each particle-to-particle interaction to around O(n), the CPU can only do so much. I plan to revisit that project in the near future and utilize GPU-based programming for NVIDIA drivers.
 
-For now, while not completely physically accurate, particle-to-particle interactions are ignored and instead interact with a singular massive object. \
+For now, while not completely physically accurate, particle-to-particle interactions are ignored and instead interact with a singular massive object.
 
 ## Dependencies
 - Pygame
