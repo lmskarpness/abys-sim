@@ -1,6 +1,6 @@
 # abys-sim - A simple gravity simulator written in Python.
 
-<img src="img/twist-white.png width="400"/> <img src="img/twist-color.png-demo.gif" width="400"/>
+![White Twist](https://github.com/lmskarpness/lmskarpness.github.io/blob/main/img/twist-white.png?raw=true)
 
 After being met with computation power limitations when writing a gravity engine that accounted for all particles, I discovered an optimization technique that sampled a set of Level of Detail (LOD) grids. This technique examines the masses of surrounding cells on different LODs, capturing nearby particle interactions accurately while coarsely aggregating further away forces. While this brought the O(N^2) complexity of comparing each particle-to-particle interaction to around O(n), the CPU can only do so much. I plan to revisit that project in the near future and utilize GPU-based programming for NVIDIA drivers.
 
